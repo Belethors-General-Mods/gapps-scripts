@@ -1,0 +1,17 @@
+---
+parserOptions:
+    ecmaVersion: 6
+    ecmaFeatures:
+        impliedStrict: true
+
+plugins:
+  - googleappsscript
+
+env:
+    googleappsscript/googleappsscript: true
+
+extends:
+  - airbnb
+
+rules:
+  no-unused-vars: 0  # In gapps, any function can be called by a trigger
